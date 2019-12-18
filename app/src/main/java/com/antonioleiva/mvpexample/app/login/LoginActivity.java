@@ -83,7 +83,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     }
 
     private void validateCredentials() {
-
         presenter.validateCredentials(username.getText().toString(), password.getText().toString());
     }
 }
