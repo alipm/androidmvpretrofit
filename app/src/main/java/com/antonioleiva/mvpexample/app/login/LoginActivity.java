@@ -27,6 +27,7 @@ import android.widget.ProgressBar;
 
 import com.antonioleiva.mvpexample.app.R;
 import com.antonioleiva.mvpexample.app.main.MainActivity;
+import com.antonioleiva.mvpexample.app.movieapp.movie_list.MovieListActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -76,7 +77,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToHome() {
-        startActivity(new Intent(this, MainActivity.class));
+//        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, MovieListActivity.class));
         finish();
     }
 
